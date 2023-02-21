@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".AlarmFragment">
+
+    <ImageView
+        android:layout_width="292dp"
+        android:layout_height="615dp"
+        android:layout_gravity="center"
+        android:src="@drawable/setting_background" />
+
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="615dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.example.karyl_ble.OutlineTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/gyeonggi_medium"
+            android:gravity="center"
+            android:text="설정"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            app:textStroke="true"
+            app:textStrokeColor="#41589c"
+            app:textStrokeWidth="7" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.9">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="자동 알람"
+                            android:textColor="#4d7cd8"
+                            android:textSize="20dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#fcffff"
+                            app:textStrokeWidth="2.5" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="알람이 울린 후 자동으로 다시 알람을 \n설정 할 수 있습니다."
+                            android:textColor="#3f414d"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:paddingLeft="10dp">
+
+                            <ImageButton
+                                android:id="@+id/btn_auto_alarm_yes"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/btn_character" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="ON"
+                                android:textColor="#3f414d"
+                                android:textSize="18dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+                            <ImageButton
+                                android:id="@+id/btn_auto_alarm_no"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/btn_character" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="OFF"
+                                android:textColor="#3f414d"
+                                android:textSize="18dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+                        </LinearLayout>
+
+
+                    </LinearLayout> <!-- 자동 알람 종료 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="볼륨 설정"
+                            android:textColor="#4d7cd8"
+                            android:textSize="20dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#fcffff"
+                            app:textStrokeWidth="2.5" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="캬루 인형의 볼륨을 조절합니다.\n(범위 : 0 ~ 30)"
+                            android:textColor="#3f414d"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2">
+
+                            <!-- 시크바 기본 위치 -->
+
+                            <SeekBar
+                                android:id="@+id/sound_seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="top"
+                                android:layout_weight="1"
+                                android:max="30"
+                                android:progress="0" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="0"
+                                android:textColor="#3f414d"
+                                android:textSize="15dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginRight="7dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="30"
+                                android:textColor="#3f414d"
+                                android:textSize="15dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:id="@+id/text_volume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="volume"
+                                android:textColor="#3f414d"
+                                android:textSize="20dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+
+                        </FrameLayout>
+                    </LinearLayout> <!-- 볼륨 설정 종료 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="알람 음악"
+                            android:textColor="#4d7cd8"
+                            android:textSize="20dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#fcffff"
+                            app:textStrokeWidth="2.5" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="캬루가 알람을 알려주는 음악을\n선택 할 수 있습니다."
+                            android:textColor="#3f414d"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+                        <Spinner
+                            android:id="@+id/spinner_music"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:dropDownWidth="250dp"
+                            android:background="@drawable/setting_tab"
+                            android:spinnerMode="dropdown">
+                        </Spinner>
+
+
+                    </LinearLayout> <!-- 알람 음악 종료 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="알람 종료 감도"
+                            android:textColor="#4d7cd8"
+                            android:textSize="20dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#fcffff"
+                            app:textStrokeWidth="2.5" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="캬루 인형의 알람 종료 감도를 조정합니다.\n(범위 : 1 ~ 10)"
+                            android:textColor="#3f414d"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.2">
+
+                            <!-- 시크바 기본 위치 -->
+
+                            <SeekBar
+                                android:id="@+id/vib_seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="top"
+                                android:layout_weight="1"
+                                android:max="10"
+                                android:min="1"
+                                android:progress="1" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="1"
+                                android:textColor="#3f414d"
+                                android:textSize="15dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginRight="7dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="10"
+                                android:textColor="#3f414d"
+                                android:textSize="15dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+                            <com.example.karyl_ble.OutlineTextView
+                                android:id="@+id/text_vib"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/gyeonggi_medium"
+                                android:gravity="left"
+                                android:text="vib"
+                                android:textColor="#3f414d"
+                                android:textSize="20dp"
+                                app:textStroke="true"
+                                app:textStrokeColor="#cdccca"
+                                app:textStrokeWidth="2" />
+
+
+                        </FrameLayout>
+                    </LinearLayout> <!-- 볼륨 설정 종료 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="자동 연결"
+                            android:textColor="#4d7cd8"
+                            android:textSize="20dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#fcffff"
+                            app:textStrokeWidth="2.5" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1.3"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:gravity="left"
+                            android:text="앱을 실행 시 자동으로 연결을 시도합니다.\n(연결 기록이 없으면 동작 불가.)"
+                            android:textColor="#3f414d"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/auto_connect_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/btn_auto_connect_yes"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/btn_character" />
+
+                                <com.example.karyl_ble.OutlineTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/gyeonggi_medium"
+                                    android:gravity="left"
+                                    android:text="ON"
+                                    android:textColor="#3f414d"
+                                    android:textSize="18dp"
+                                    app:textStroke="true"
+                                    app:textStrokeColor="#cdccca"
+                                    app:textStrokeWidth="2" />
+
+                                <ImageButton
+                                    android:id="@+id/btn_auto_connect_no"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/btn_character" />
+
+                                <com.example.karyl_ble.OutlineTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/gyeonggi_medium"
+                                    android:gravity="left"
+                                    android:text="OFF"
+                                    android:textColor="#3f414d"
+                                    android:textSize="18dp"
+                                    app:textStroke="true"
+                                    app:textStrokeColor="#cdccca"
+                                    app:textStrokeWidth="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/connect_lock_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone">
+
+                                <ImageButton
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/button_lock" />
+
+                                <com.example.karyl_ble.OutlineTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/gyeonggi_medium"
+                                    android:gravity="left"
+                                    android:text="ON"
+                                    android:textColor="#ff0000"
+                                    android:textSize="18dp"
+                                    app:textStroke="true"
+                                    app:textStrokeColor="#cdccca"
+                                    app:textStrokeWidth="2" />
+
+                                <ImageButton
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/button_lock" />
+
+                                <com.example.karyl_ble.OutlineTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/gyeonggi_medium"
+                                    android:gravity="left"
+                                    android:text="OFF"
+                                    android:textColor="#ff0000"
+                                    android:textSize="18dp"
+                                    app:textStroke="true"
+                                    app:textStrokeColor="#cdccca"
+                                    app:textStrokeWidth="2" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+
+                        <ImageButton
+                            android:id="@+id/reset_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.2"
+                            android:adjustViewBounds="true"
+                            android:background="@android:color/transparent"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/btn_reset" />
+
+                        <com.example.karyl_ble.OutlineTextView
+                            android:id="@+id/reset_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/gyeonggi_medium"
+                            android:text="리셋 결과 텍스트 나오는곳"
+                            android:textColor="#626262"
+                            android:textSize="15dp"
+                            app:textStroke="true"
+                            app:textStrokeColor="#cdccca"
+                            app:textStrokeWidth="2" />
+
+
+                    </LinearLayout> <!-- 자동 연결 종료 -->
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0.1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageButton
+                android:id="@+id/cancel_exit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_cancle" />
+
+            <ImageButton
+                android:id="@+id/ok_exit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_ok" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+

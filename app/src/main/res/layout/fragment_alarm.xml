@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    tools:context=".AlarmFragment">
+    <FrameLayout
+        android:layout_width="328dp"
+        android:layout_height="357dp"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/alarm_background" />
+
+        <com.example.karyl_ble.OutlineTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/gyeonggi_medium"
+            android:gravity="center"
+            android:text="알람 설정"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            app:textStroke="true"
+            app:textStrokeColor="#41589c"
+            app:textStrokeWidth="7" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_alarm_cancle" />
+
+            <ImageButton
+                android:id="@+id/set_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btn_alarm_apply" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">캬루 알람 인형 설정기</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ble_not_supported">bluetooth not supported</string>
+    <string name="scan">scan</string>
+    <string name="paired">paired</string>
+    <string name="cancel">cancel</string>
+    <string name="select_device">select device</string>
+    <string name="scanning">scanning</string>
+    <string name="send">send</string>
+    <string name="connect">connect</string>
+    <string name="about">about</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 로딩시 텍스트 라인 -->
+    <string name="loading_text_00">캬루 인형과 연결 중 입니다.</string>
+    <string name="loading_text_01">캬루 인형과 연결 중 입니다..</string>
+    <string name="loading_text_02">캬루 인형과 연결 중 입니다...</string>
+    <string name="loading_text_03">알람 적용 중 입니다.</string>
+    <string name="loading_text_04">알람 적용 중 입니다..</string>
+    <string name="loading_text_05">알람 적용 중 입니다...</string>
+    <string name="loading_text_06">알람 취소 중 입니다.</string>
+    <string name="loading_text_07">알람 취소 중 입니다..</string>
+    <string name="loading_text_08">알람 취소 중 입니다...</string>
+    <string name="loading_text_09">캬루 인형과 설정 공유 중 입니다.</string>
+    <string name="loading_text_10">캬루 인형과 설정 공유 중 입니다..</string>
+    <string name="loading_text_11">캬루 인형과 설정 공유 중 입니다...</string>
+    <string name="loading_text_12">캬루 인형에 침묵 시도 중입니다.</string>
+    <string name="loading_text_13">캬루 인형에 침묵 시도 중입니다..</string>
+    <string name="loading_text_14">캬루 인형에 침묵 시도 중입니다...</string>
+    <string name="loading_text_15">캬루 인형에 설정 송신 중 입니다.</string>
+    <string name="loading_text_16">캬루 인형에 설정 송신 중 입니다..</string>
+    <string name="loading_text_17">캬루 인형에 설정 송신 중 입니다...</string>
+
+    <!-- 음악 리스트 -->
+    <array name="karyl_music">
+        <item>캬루 보이스 알람</item>
+        <item>Lost Princess</item>
+        <item>Absolute Secret</item>
+        <item>(DEBUG) 우리와 너의 노래</item>
+    </array>
+
+    <!-- gif 리스트 모음 -->
+    <array name="message_gif">
+        <item>@drawable/gif_karyl_connect_auto</item>
+        <item>@drawable/gif_karyl_connect_failed</item>
+        <item>@drawable/gif_connect_ok</item>
+        <item>@drawable/gif_connect_send</item>
+        <item>@drawable/gif_setting_recieve</item>
+        <item>@drawable/gif_setting_send</item>
+        <item>@drawable/gif_setting_complete</item>
+        <item>@drawable/gif_setting_failed</item>
+        <item>@drawable/gif_alarm_setting</item>
+        <item>@drawable/gif_alarm_send</item>
+        <item>@drawable/gif_alarm_ok</item>
+        <item>@drawable/gif_alarm_failed</item>
+        <item>@drawable/gif_alarm_stop_failed</item>
+        <item>@drawable/gif_alarm_stop_success</item>
+        <item>@drawable/gif_alarm_stop_send</item>
+        <item>@drawable/gif_setting_recieve_failed</item>
+        <item>@drawable/gif_alarm_alart</item>
+        <item>@drawable/gif_alarm_alart_stop_send</item>
+        <item>@drawable/gif_alarm_alart_end_ok</item>
+        <item>@drawable/gif_alarm_alart_end_failed</item>
+        <item>@drawable/gif_welcome_morning</item>
+        <item>@drawable/gif_welcome_afternoon</item>
+        <item>@drawable/gif_welcome_dinner</item>
+        <item>@drawable/gif_welcome_dun</item>
+        <item>@drawable/gif_hit</item>
+    </array>
+
+    <!-- 시간용 폰트 -->
+    <array name="png_num">
+        <item>@drawable/font_0</item>
+        <item>@drawable/font_1</item>
+        <item>@drawable/font_2</item>
+        <item>@drawable/font_3</item>
+        <item>@drawable/font_4</item>
+        <item>@drawable/font_5</item>
+        <item>@drawable/font_6</item>
+        <item>@drawable/font_7</item>
+        <item>@drawable/font_8</item>
+        <item>@drawable/font_9</item>
+    </array>
+
+    <!-- 캬루 이미지 애니메이션 리스트 -->
+    <array name="png_karyl_00">
+        <item>@drawable/connecting_0</item>
+        <item>@drawable/connecting_1</item>
+        <item>@drawable/connecting_2</item>
+        <item>@drawable/connecting_3</item>
+        <item>@drawable/connecting_4</item>
+        <item>@drawable/connecting_5</item>
+        <item>@drawable/connecting_6</item>
+        <item>@drawable/connecting_7</item>
+        <item>@drawable/connecting_8</item>
+        <item>@drawable/connecting_9</item>
+        <item>@drawable/connecting_10</item>
+        <item>@drawable/connecting_11</item>
+        <item>@drawable/connecting_12</item>
+        <item>@drawable/connecting_13</item>
+        <item>@drawable/connecting_14</item>
+        <item>@drawable/connecting_15</item>
+        <item>@drawable/connecting_16</item>
+        <item>@drawable/connecting_17</item>
+        <item>@drawable/connecting_18</item>
+        <item>@drawable/connecting_19</item>
+        <item>@drawable/connecting_20</item>
+        <item>@drawable/connecting_21</item>
+        <item>@drawable/connecting_22</item>
+        <item>@drawable/connecting_23</item>
+        <item>@drawable/connecting_24</item>
+        <item>@drawable/connecting_25</item>
+        <item>@drawable/connecting_26</item>
+        <item>@drawable/connecting_27</item>
+        <item>@drawable/connecting_28</item>
+        <item>@drawable/connecting_29</item>
+    </array>
+
+    <array name="png_karyl_01">
+        <item>@drawable/alarm_set_0</item>
+        <item>@drawable/alarm_set_1</item>
+        <item>@drawable/alarm_set_2</item>
+        <item>@drawable/alarm_set_3</item>
+        <item>@drawable/alarm_set_4</item>
+        <item>@drawable/alarm_set_5</item>
+        <item>@drawable/alarm_set_6</item>
+        <item>@drawable/alarm_set_7</item>
+        <item>@drawable/alarm_set_8</item>
+        <item>@drawable/alarm_set_9</item>
+        <item>@drawable/alarm_set_10</item>
+        <item>@drawable/alarm_set_11</item>
+        <item>@drawable/alarm_set_12</item>
+        <item>@drawable/alarm_set_13</item>
+        <item>@drawable/alarm_set_14</item>
+        <item>@drawable/alarm_set_15</item>
+        <item>@drawable/alarm_set_16</item>
+        <item>@drawable/alarm_set_17</item>
+        <item>@drawable/alarm_set_18</item>
+        <item>@drawable/alarm_set_19</item>
+        <item>@drawable/alarm_set_20</item>
+        <item>@drawable/alarm_set_21</item>
+        <item>@drawable/alarm_set_22</item>
+        <item>@drawable/alarm_set_23</item>
+        <item>@drawable/alarm_set_24</item>
+        <item>@drawable/alarm_set_25</item>
+        <item>@drawable/alarm_set_26</item>
+        <item>@drawable/alarm_set_27</item>
+        <item>@drawable/alarm_set_28</item>
+        <item>@drawable/alarm_set_29</item>
+    </array>
+
+    <array name="png_karyl_02">
+        <item>@drawable/alarm_stop_0</item>
+        <item>@drawable/alarm_stop_1</item>
+        <item>@drawable/alarm_stop_2</item>
+        <item>@drawable/alarm_stop_3</item>
+        <item>@drawable/alarm_stop_4</item>
+        <item>@drawable/alarm_stop_5</item>
+        <item>@drawable/alarm_stop_6</item>
+        <item>@drawable/alarm_stop_7</item>
+        <item>@drawable/alarm_stop_8</item>
+        <item>@drawable/alarm_stop_9</item>
+        <item>@drawable/alarm_stop_10</item>
+        <item>@drawable/alarm_stop_11</item>
+        <item>@drawable/alarm_stop_12</item>
+        <item>@drawable/alarm_stop_13</item>
+        <item>@drawable/alarm_stop_14</item>
+        <item>@drawable/alarm_stop_15</item>
+        <item>@drawable/alarm_stop_16</item>
+        <item>@drawable/alarm_stop_17</item>
+        <item>@drawable/alarm_stop_18</item>
+        <item>@drawable/alarm_stop_19</item>
+        <item>@drawable/alarm_stop_20</item>
+        <item>@drawable/alarm_stop_21</item>
+        <item>@drawable/alarm_stop_22</item>
+        <item>@drawable/alarm_stop_23</item>
+        <item>@drawable/alarm_stop_24</item>
+        <item>@drawable/alarm_stop_25</item>
+        <item>@drawable/alarm_stop_26</item>
+        <item>@drawable/alarm_stop_27</item>
+        <item>@drawable/alarm_stop_28</item>
+        <item>@drawable/alarm_stop_29</item>
+    </array>
+
+    <array name="png_karyl_03">
+        <item>@drawable/setting_read_0</item>
+        <item>@drawable/setting_read_1</item>
+        <item>@drawable/setting_read_2</item>
+        <item>@drawable/setting_read_3</item>
+        <item>@drawable/setting_read_4</item>
+        <item>@drawable/setting_read_5</item>
+        <item>@drawable/setting_read_6</item>
+        <item>@drawable/setting_read_7</item>
+        <item>@drawable/setting_read_8</item>
+        <item>@drawable/setting_read_9</item>
+        <item>@drawable/setting_read_10</item>
+        <item>@drawable/setting_read_11</item>
+        <item>@drawable/setting_read_12</item>
+        <item>@drawable/setting_read_13</item>
+        <item>@drawable/setting_read_14</item>
+        <item>@drawable/setting_read_15</item>
+        <item>@drawable/setting_read_16</item>
+        <item>@drawable/setting_read_17</item>
+        <item>@drawable/setting_read_18</item>
+        <item>@drawable/setting_read_19</item>
+        <item>@drawable/setting_read_20</item>
+        <item>@drawable/setting_read_21</item>
+        <item>@drawable/setting_read_22</item>
+        <item>@drawable/setting_read_23</item>
+        <item>@drawable/setting_read_24</item>
+        <item>@drawable/setting_read_25</item>
+        <item>@drawable/setting_read_26</item>
+        <item>@drawable/setting_read_27</item>
+        <item>@drawable/setting_read_28</item>
+        <item>@drawable/setting_read_29</item>
+    </array>
+
+    <array name="png_karyl_04">
+        <item>@drawable/setting_send_0</item>
+        <item>@drawable/setting_send_1</item>
+        <item>@drawable/setting_send_2</item>
+        <item>@drawable/setting_send_3</item>
+        <item>@drawable/setting_send_4</item>
+        <item>@drawable/setting_send_5</item>
+        <item>@drawable/setting_send_6</item>
+        <item>@drawable/setting_send_7</item>
+        <item>@drawable/setting_send_8</item>
+        <item>@drawable/setting_send_9</item>
+        <item>@drawable/setting_send_10</item>
+        <item>@drawable/setting_send_11</item>
+        <item>@drawable/setting_send_12</item>
+        <item>@drawable/setting_send_13</item>
+        <item>@drawable/setting_send_14</item>
+        <item>@drawable/setting_send_15</item>
+        <item>@drawable/setting_send_16</item>
+        <item>@drawable/setting_send_17</item>
+        <item>@drawable/setting_send_18</item>
+        <item>@drawable/setting_send_19</item>
+        <item>@drawable/setting_send_20</item>
+        <item>@drawable/setting_send_21</item>
+        <item>@drawable/setting_send_22</item>
+        <item>@drawable/setting_send_23</item>
+        <item>@drawable/setting_send_24</item>
+        <item>@drawable/setting_send_25</item>
+        <item>@drawable/setting_send_26</item>
+        <item>@drawable/setting_send_27</item>
+        <item>@drawable/setting_send_28</item>
+        <item>@drawable/setting_send_29</item>
+    </array>
+
+    <array name="png_karyl_05">
+        <item>@drawable/setting_send_0</item>
+        <item>@drawable/setting_send_1</item>
+        <item>@drawable/setting_send_2</item>
+        <item>@drawable/setting_send_3</item>
+        <item>@drawable/setting_send_4</item>
+        <item>@drawable/setting_send_5</item>
+        <item>@drawable/setting_send_6</item>
+        <item>@drawable/setting_send_7</item>
+        <item>@drawable/setting_send_8</item>
+        <item>@drawable/setting_send_9</item>
+        <item>@drawable/setting_send_10</item>
+        <item>@drawable/setting_send_11</item>
+        <item>@drawable/setting_send_12</item>
+        <item>@drawable/setting_send_13</item>
+        <item>@drawable/setting_send_14</item>
+        <item>@drawable/setting_send_15</item>
+        <item>@drawable/setting_send_16</item>
+        <item>@drawable/setting_send_17</item>
+        <item>@drawable/setting_send_18</item>
+        <item>@drawable/setting_send_19</item>
+        <item>@drawable/setting_send_20</item>
+        <item>@drawable/setting_send_21</item>
+        <item>@drawable/setting_send_22</item>
+        <item>@drawable/setting_send_23</item>
+        <item>@drawable/setting_send_24</item>
+        <item>@drawable/setting_send_25</item>
+        <item>@drawable/setting_send_26</item>
+        <item>@drawable/setting_send_27</item>
+        <item>@drawable/setting_send_28</item>
+        <item>@drawable/setting_send_29</item>
+    </array>
+
+</resources>

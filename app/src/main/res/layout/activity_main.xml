@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_500367" />
+
+        <ImageView
+            android:layout_width="730dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/img_karyl" />
+
+        <ImageView
+            android:id="@+id/alart_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="100dp"
+            android:visibility="invisible"
+            android:src="@drawable/alarm_alart"/>
+
+        <ImageView
+            android:id="@+id/gif_karyl_speak"
+            android:layout_width="730dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/gif_karyl_speak"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gif_karyl_blink"
+            android:layout_width="730dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/gif_karyl_blinking" />
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#00ff0000"
+            android:src="@drawable/btn_menu_setting"
+            android:text="설정"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/speech_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            android:src="@drawable/speech_bubble" />
+
+        <ImageView
+            android:id="@+id/speech_text"
+            android:layout_width="262dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/battery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/battery_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/img_battery5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="190dp"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/alarm_text"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_hour_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/font_0" />
+
+                <ImageView
+                    android:id="@+id/img_hour_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/font_0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/font_colonm" />
+
+                <ImageView
+                    android:id="@+id/img_min_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/font_0" />
+
+                <ImageView
+                    android:id="@+id/img_min_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/font_0" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:background="#00ff0000"
+            android:src="@drawable/btn_connect" />
+    </FrameLayout>
+
+
+</RelativeLayout>

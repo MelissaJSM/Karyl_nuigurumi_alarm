@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item android:drawable="@drawable/connecting_1" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_2" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_3" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_4" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_5" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_6" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_7" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_8" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_9" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_10" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_11" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_12" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_13" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_14" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_15" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_16" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_17" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_18" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_19" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_20" android:duration="30"/>
+    <item android:drawable="@drawable/connecting_21" android:duration="30"/>
+</animation-list>
